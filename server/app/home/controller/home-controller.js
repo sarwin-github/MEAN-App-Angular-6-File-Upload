@@ -32,10 +32,10 @@ module.exports.uploadImage = (req, res) => {
 		.then(result => {
 			let imageData = new Images();
 
-			let imagePath = result.split('\\');
+			let imagePath = result.split('/');
 
-			imageData.location = result.toString();
-			imageData.imageName = imagePath[2];
+			imageData.location  = result.toString();
+			imageData.imageName = imagePath[3];
 
 			return imageData.save((images) => {
 				res.status(200).json({ 
