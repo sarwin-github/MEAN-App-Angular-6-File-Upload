@@ -14,14 +14,12 @@
 			  	</thead>
 			  	<tbody>
 			  		<tr *ngFor="let image of result?.images">
-			  			<td><img src="assets/{{image.imageName}}" class="img-fluid w-50"></td>
-			  			<td>{{image.imageName.split('.')[0]}}</td>
+			  			<td><img src="{{image.location}}" class="img-fluid w-50"></td>
+			  			<td>{{image.imageName}}</td>
 			  			<td>{{image.dateAdded}}</td>
 			  		</tr>
 			  	</tbody>
 		  	</table>
-		  
-
 		</div>
 	</div>
 </div>
