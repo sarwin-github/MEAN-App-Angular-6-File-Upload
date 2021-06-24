@@ -1,4 +1,4 @@
-# AngularImageUpload
+# Angular Image Upload
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. Simple Image Uploader App using Angular and Node.
 
